@@ -8,16 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AE0AD40D196497230062524F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD406196497230062524F /* AppDelegate.swift */; };
-		AE0AD40F196497230062524F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD407196497230062524F /* ViewController.swift */; };
+		AE0AD40F196497230062524F /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD407196497230062524F /* ArticleViewController.swift */; };
 		AE0AD411196497230062524F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0AD409196497230062524F /* Main.storyboard */; };
 		AE0AD413196497230062524F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0AD40B196497230062524F /* Images.xcassets */; };
-		AE0AD415196497230062524F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE0AD40C196497230062524F /* Info.plist */; };
 		AE0AD41A1964977C0062524F /* HackerNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD4181964977C0062524F /* HackerNewsTests.swift */; };
+		AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */; };
+		AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41E1964ACC30062524F /* LoginViewController.swift */; };
+		AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77119651D5600916826 /* ArticleTableViewCell.swift */; };
+		AE67F77419651DFE00916826 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77319651DFE00916826 /* DialogView.swift */; };
 		E0001531837E4BB68C7BFD33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0780E026FA4885ADD6C934 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		AE0AD3F61964966C0062524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0AD3DB1964966B0062524F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0AD3E21964966B0062524F;
+			remoteInfo = HackerNews;
+		};
+		AE38BD581964F2FF00C47920 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE0AD3DB1964966B0062524F /* Project object */;
 			proxyType = 1;
@@ -32,12 +42,17 @@
 		AE0AD3E31964966B0062524F /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0AD3F51964966C0062524F /* HackerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0AD406196497230062524F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE0AD407196497230062524F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0AD407196497230062524F /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		AE0AD40A196497230062524F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE0AD40B196497230062524F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE0AD40C196497230062524F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0AD4181964977C0062524F /* HackerNewsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNewsTests.swift; sourceTree = "<group>"; };
 		AE0AD4191964977C0062524F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		AE0AD41E1964ACC30062524F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNews-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE67F77119651D5600916826 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		AE67F77319651DFE00916826 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				AE0AD406196497230062524F /* AppDelegate.swift */,
-				AE0AD407196497230062524F /* ViewController.swift */,
+				AE0AD407196497230062524F /* ArticleViewController.swift */,
+				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
+				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
+				AE67F77319651DFE00916826 /* DialogView.swift */,
+				AE0AD41E1964ACC30062524F /* LoginViewController.swift */,
+				AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -150,6 +170,7 @@
 			);
 			dependencies = (
 				AE0AD3F71964966C0062524F /* PBXTargetDependency */,
+				AE38BD591964F2FF00C47920 /* PBXTargetDependency */,
 			);
 			name = HackerNewsTests;
 			productName = HackerNewsTests;
@@ -200,7 +221,6 @@
 			files = (
 				AE0AD411196497230062524F /* Main.storyboard in Resources */,
 				AE0AD413196497230062524F /* Images.xcassets in Resources */,
-				AE0AD415196497230062524F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0AD40F196497230062524F /* ViewController.swift in Sources */,
+				AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */,
+				AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */,
+				AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */,
+				AE0AD40F196497230062524F /* ArticleViewController.swift in Sources */,
+				AE67F77419651DFE00916826 /* DialogView.swift in Sources */,
 				AE0AD40D196497230062524F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +295,11 @@
 			isa = PBXTargetDependency;
 			target = AE0AD3E21964966B0062524F /* HackerNews */;
 			targetProxy = AE0AD3F61964966C0062524F /* PBXContainerItemProxy */;
+		};
+		AE38BD591964F2FF00C47920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0AD3E21964966B0062524F /* HackerNews */;
+			targetProxy = AE38BD581964F2FF00C47920 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -371,9 +400,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/HackerNews-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -383,9 +415,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/HackerNews-Bridging-Header.h";
 			};
 			name = Release;
 		};
