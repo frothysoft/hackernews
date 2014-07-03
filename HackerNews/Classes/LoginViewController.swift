@@ -10,11 +10,19 @@ import UIKit
 
 protocol LoginInteractionHandler {
   func logInForUsername(username: String, password: String)
+  func close()
 }
 
 class LoginViewController: UIViewController, LoginInteractionHandler {
   
   @IBOutlet var userInterface: DialogView!
+  let hackerNewsAPI: HackerNewsAPI
+  
+  init(coder aDecoder: NSCoder!) {
+    let objectsFactory = (UIApplication.sharedApplication().delegate as AppDelegate).objectsFactory
+    hackerNewsAPI = objectsFactory.hackerNewsAPI
+    super.init(coder: aDecoder)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,13 +35,17 @@ class LoginViewController: UIViewController, LoginInteractionHandler {
   
   func logInForUsername(username: String, password: String) {
     userInterface.showLoadingView()
-    HNManager.sharedManager().loginWithUsername(username, password: password) { (user: HNUser!) in
+    hackerNewsAPI.logInWithUsername(username, password: password) { (user: User!) in
       self.userInterface.hideLoadingView()
       if user == nil {
         self.userInterface.showErrorMessage()
       } else {
-        self.performSegueWithIdentifier("loginToHomeScene", sender: self)
+        self.dismissViewControllerAnimated(true, completion: nil)
       }
     }
+  }
+  
+  func close() {
+    dismissViewControllerAnimated(true, completion: nil)
   }
 }

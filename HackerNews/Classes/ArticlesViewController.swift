@@ -10,23 +10,25 @@ import UIKit
 
 class ArticlesViewController: UITableViewController {
   
-  var posts: HNPost[] = []
+  var posts: Post[] = []
   @IBOutlet var loadingIndicator : UIActivityIndicatorView
+  let hackerNewsAPI: HackerNewsAPI
+  
+  init(coder aDecoder: NSCoder!) {
+    let objectsFactory = (UIApplication.sharedApplication().delegate as AppDelegate).objectsFactory
+    hackerNewsAPI = objectsFactory.hackerNewsAPI
+    super.init(coder: aDecoder)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    tableView.estimatedRowHeight = UITableViewAutomaticDimension
     loadPosts()
   }
   
   func loadPosts() {
     loadingIndicator.startAnimating()
-    HNManager.sharedManager().loadPostsWithFilter(PostFilterType.Top) { (posts: AnyObject[]!) in
-      self.posts = []
-      for object : AnyObject in posts {
-        var post: HNPost = object as HNPost
-        self.posts += post
-      }
+    hackerNewsAPI.loadPostsWithFilter(PostFilterType.Top) { (posts: Post[]!) in
+      self.posts = posts
       self.loadingIndicator.stopAnimating()
       self.tableView.reloadData()
     }
@@ -39,16 +41,13 @@ class ArticlesViewController: UITableViewController {
   override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!  {
     let id = "ArticleCell"
     var cell = tableView.dequeueReusableCellWithIdentifier(id) as? ArticleTableViewCell
-    
     let post = posts[indexPath.item]
     cell!.displayPost(post)
-    
     return cell
   }
   
   override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
-  
   
 }

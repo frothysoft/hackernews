@@ -16,6 +16,14 @@
 		AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41E1964ACC30062524F /* LoginViewController.swift */; };
 		AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77119651D5600916826 /* ArticleTableViewCell.swift */; };
 		AE67F77419651DFE00916826 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77319651DFE00916826 /* DialogView.swift */; };
+		AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */; };
+		AE721E191965DAEF008C9338 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE721E181965DAEF008C9338 /* User.swift */; };
+		AEBC8CD91965DC86001F8846 /* LibHNHackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */; };
+		AEBC8CDB1965DCC2001F8846 /* LibHNUserToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */; };
+		AEBC8CDD1965DE6C001F8846 /* ObjectsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */; };
+		AEBC8CDF1965E008001F8846 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDE1965E008001F8846 /* Post.swift */; };
+		AEBC8CE11965E169001F8846 /* LibHNPostToPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */; };
+		AEBC8CE31965E3B0001F8846 /* LibHNPostTypeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */; };
 		E0001531837E4BB68C7BFD33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0780E026FA4885ADD6C934 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +61,14 @@
 		AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE67F77119651D5600916826 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AE67F77319651DFE00916826 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNewsAPI.swift; sourceTree = "<group>"; };
+		AE721E181965DAEF008C9338 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNHackerNewsAPI.swift; sourceTree = "<group>"; };
+		AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserToUser.swift; sourceTree = "<group>"; };
+		AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsFactory.swift; sourceTree = "<group>"; };
+		AEBC8CDE1965E008001F8846 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNPostToPost.swift; sourceTree = "<group>"; };
+		AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNPostTypeImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,14 @@
 			isa = PBXGroup;
 			children = (
 				AE0AD406196497230062524F /* AppDelegate.swift */,
+				AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */,
+				AE721E181965DAEF008C9338 /* User.swift */,
+				AEBC8CDE1965E008001F8846 /* Post.swift */,
+				AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */,
+				AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */,
+				AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */,
+				AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */,
+				AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */,
 				AE0AD407196497230062524F /* ArticleViewController.swift */,
 				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
 				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
@@ -271,9 +295,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBC8CD91965DC86001F8846 /* LibHNHackerNewsAPI.swift in Sources */,
+				AEBC8CE11965E169001F8846 /* LibHNPostToPost.swift in Sources */,
+				AEBC8CDD1965DE6C001F8846 /* ObjectsFactory.swift in Sources */,
+				AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */,
+				AEBC8CDF1965E008001F8846 /* Post.swift in Sources */,
+				AEBC8CE31965E3B0001F8846 /* LibHNPostTypeImages.swift in Sources */,
+				AEBC8CDB1965DCC2001F8846 /* LibHNUserToUser.swift in Sources */,
 				AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */,
 				AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */,
 				AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */,
+				AE721E191965DAEF008C9338 /* User.swift in Sources */,
 				AE0AD40F196497230062524F /* ArticleViewController.swift in Sources */,
 				AE67F77419651DFE00916826 /* DialogView.swift in Sources */,
 				AE0AD40D196497230062524F /* AppDelegate.swift in Sources */,

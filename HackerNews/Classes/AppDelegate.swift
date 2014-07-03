@@ -12,7 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
   var window: UIWindow?
-
+  let objectsFactory: ObjectsFactory
+  
+  init() {
+    objectsFactory = HackerNewsObjectFactory()
+    super.init()
+  }
+  
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
     return true
   }

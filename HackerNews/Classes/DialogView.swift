@@ -20,12 +20,20 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   @IBOutlet var passwordImageView: UIImageView!
   @IBOutlet var loadingView: UIView!
   
+  var showErrorHeight = 0.0
+  
   @IBAction func logInButtonPressed(sender: AnyObject) {
-    hideKeyboard()
-    
-    if let ih = interactionHandler {
-      ih.logInForUsername(emailTextField.text, password: passwordTextField.text)
-    }
+    hideKeyboard()    
+    if let ih = interactionHandler { ih.logInForUsername(emailTextField.text, password: passwordTextField.text) }
+  }
+  
+  @IBAction func closeButtonPressed(sender: AnyObject) {
+    if let ih = interactionHandler { ih.close() }
+  }
+  
+  override func willMoveToSuperview(newSuperview: UIView!) {
+    super.willMoveToSuperview(newSuperview)
+    showErrorHeight = frame.height + 40
   }
   
   func hideKeyboard() {
@@ -51,8 +59,13 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   
   func growDialogView() {
     self.heightConstraint.constant = 320
-    var updateLayout = { self.superview.layoutIfNeeded() }
-    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: updateLayout, completion: nil)
+    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+      if self.bounds.height != self.showErrorHeight {
+        var showErrorFrame = self.frame
+        showErrorFrame.size.height = self.showErrorHeight
+        self.frame = showErrorFrame
+      }
+    }, completion: nil)
   }
   
   func showLoadingView() {
@@ -84,9 +97,9 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
     if textField == emailTextField {
       if textField.text.utf16count > 20 {
-        emailImageView.hidden = true
+        self.emailImageView.hidden = true
       } else {
-        emailImageView.hidden = false
+        self.emailImageView.hidden = false
       }
     }
     
