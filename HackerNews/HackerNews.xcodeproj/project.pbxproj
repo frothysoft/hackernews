@@ -123,11 +123,11 @@
 				AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */,
 				AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */,
 				AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */,
-				AE0AD407196497230062524F /* ArticleViewController.swift */,
-				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
-				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
-				AE67F77319651DFE00916826 /* DialogView.swift */,
 				AE0AD41E1964ACC30062524F /* LoginViewController.swift */,
+				AE67F77319651DFE00916826 /* DialogView.swift */,
+				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
+				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
+				AE0AD407196497230062524F /* ArticleViewController.swift */,
 				AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */,
 			);
 			path = Classes;

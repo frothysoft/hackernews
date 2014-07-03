@@ -14,6 +14,7 @@ struct Post {
   let username: String
   let points: Int
   let commentCount: Int
+  let timeCreatedString: String
   let typeImage: UIImage!
   
 }

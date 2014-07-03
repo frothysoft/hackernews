@@ -128,8 +128,8 @@
                                             <outlet property="passwordTextField" destination="h23-g7-zeM" id="Mfv-Tz-1tN"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-X0-NC2">
-                                        <rect key="frame" x="14" y="30" width="50" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-X0-NC2">
+                                        <rect key="frame" x="0.0" y="15" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="03a-8s-7mz"/>
                                             <constraint firstAttribute="height" constant="50" id="fly-jh-FgF"/>
@@ -138,7 +138,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="closeButtonPressed:" destination="6Xv-Ew-Bqn" eventType="touchUpInside" id="YzG-6d-tRW"/>
+                                            <action selector="closeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLA-FQ-B6p"/>
                                         </connections>
                                     </button>
                                 </subviews>

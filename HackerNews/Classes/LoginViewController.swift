@@ -10,7 +10,6 @@ import UIKit
 
 protocol LoginInteractionHandler {
   func logInForUsername(username: String, password: String)
-  func close()
 }
 
 class LoginViewController: UIViewController, LoginInteractionHandler {
@@ -33,6 +32,10 @@ class LoginViewController: UIViewController, LoginInteractionHandler {
     return .LightContent
   }
   
+  @IBAction func closeButtonPressed(sender: AnyObject) {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
+  
   func logInForUsername(username: String, password: String) {
     userInterface.showLoadingView()
     hackerNewsAPI.logInWithUsername(username, password: password) { (user: User!) in
@@ -45,7 +48,4 @@ class LoginViewController: UIViewController, LoginInteractionHandler {
     }
   }
   
-  func close() {
-    dismissViewControllerAnimated(true, completion: nil)
-  }
 }

@@ -27,10 +27,6 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
     if let ih = interactionHandler { ih.logInForUsername(emailTextField.text, password: passwordTextField.text) }
   }
   
-  @IBAction func closeButtonPressed(sender: AnyObject) {
-    if let ih = interactionHandler { ih.close() }
-  }
-  
   override func willMoveToSuperview(newSuperview: UIView!) {
     super.willMoveToSuperview(newSuperview)
     showErrorHeight = frame.height + 40

@@ -23,6 +23,7 @@ class ArticleTableViewCell: UITableViewCell {
     pointsLabel.text = "\(post.points)"
     commentsLabel.text = "\(post.commentCount)"
     typeImageView.image = post.typeImage
+    dateLabel.text = post.timeCreatedString
   }
   
 }
