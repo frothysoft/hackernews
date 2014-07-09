@@ -59,7 +59,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qau-ul-32m">
                                                 <rect key="frame" x="15" y="211" width="250" height="44"/>
-                                                <state key="normal" title="Log in" backgroundImage="button-blue">
+                                                <state key="normal" title="Log in" backgroundImage="button-orange">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -218,7 +218,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="kmF-TD-YK0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.16492465138435364" green="0.380583256483078" blue="0.77322918176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.92919731140136719" green="0.44559097290039062" blue="0.20071148872375488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -382,7 +382,7 @@
     <resources>
         <image name="Article" width="320" height="1240"/>
         <image name="badge-type" width="51" height="50"/>
-        <image name="button-blue" width="7" height="44"/>
+        <image name="button-orange" width="250" height="44"/>
         <image name="close-button" width="25" height="25"/>
         <image name="icon-comment" width="17" height="15"/>
         <image name="icon-mail" width="26" height="18"/>

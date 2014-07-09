@@ -18,6 +18,7 @@
 		AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */; };
 		AE105FCA196DCFAE00E8C6A9 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */; };
 		AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */; };
+		AE538F8D196DDD3D00752B59 /* HackerNews.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */; };
 		AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */; };
 		AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77119651D5600916826 /* ArticleTableViewCell.swift */; };
 		AE67F77419651DFE00916826 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77319651DFE00916826 /* DialogView.swift */; };
@@ -65,10 +66,10 @@
 		AE0AD41E1964ACC30062524F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserStore.swift; sourceTree = "<group>"; };
 		AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataAccess.swift; sourceTree = "<group>"; };
-		AE0CC54C196C95CB000E03E3 /* HackerNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HackerNews.entitlements; sourceTree = "<group>"; };
 		AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
 		AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCredentialStore.swift; sourceTree = "<group>"; };
+		AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HackerNews.entitlements; sourceTree = "<group>"; };
 		AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurBackgroundSegueExtension.swift; sourceTree = "<group>"; };
 		AE67F77119651D5600916826 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AE67F77319651DFE00916826 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		AE0AD3DA1964966B0062524F = {
 			isa = PBXGroup;
 			children = (
-				AE0CC54C196C95CB000E03E3 /* HackerNews.entitlements */,
 				AE0AD405196497230062524F /* Classes */,
 				AE0AD408196497230062524F /* Resources */,
 				AE0AD3E41964966B0062524F /* Products */,
@@ -153,6 +153,7 @@
 		AE0AD408196497230062524F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */,
 				AE0AD409196497230062524F /* Main.storyboard */,
 				AE0AD40B196497230062524F /* Images.xcassets */,
 				AE0AD40C196497230062524F /* Info.plist */,
@@ -268,6 +269,7 @@
 			files = (
 				AE0AD411196497230062524F /* Main.storyboard in Resources */,
 				AE0AD413196497230062524F /* Images.xcassets in Resources */,
+				AE538F8D196DDD3D00752B59 /* HackerNews.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = HackerNews.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/HackerNews.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Resources/Info.plist;
@@ -480,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = HackerNews.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/HackerNews.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Resources/Info.plist;
