@@ -10,24 +10,45 @@ import UIKit
 
 class ArticlesViewController: UITableViewController {
   
-  var posts: Post[] = []
+  var posts: [Post] = []
   @IBOutlet var loadingIndicator : UIActivityIndicatorView
   let hackerNewsAPI: HackerNewsAPI
-  
+  let userDataAccess: UserDataAccess
+
   init(coder aDecoder: NSCoder!) {
     let objectsFactory = (UIApplication.sharedApplication().delegate as AppDelegate).objectsFactory
     hackerNewsAPI = objectsFactory.hackerNewsAPI
+    userDataAccess = objectsFactory.userDataAccess
     super.init(coder: aDecoder)
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    setUpPersonIcon()
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setUpTableView()
     loadPosts()
+  }
+
+  func setUpPersonIcon() {
+    var personImage = UIImage(named: "person")
+    if userDataAccess.loggedInUser() {
+      personImage = UIImage(named: "person-active")
+    }
+    navigationItem.rightBarButtonItem.image = personImage
+  }
+
+  func setUpTableView() {
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 100.0
   }
   
   func loadPosts() {
     loadingIndicator.startAnimating()
-    hackerNewsAPI.loadPostsWithFilter(PostFilterType.Top) { (posts: Post[]!) in
+    hackerNewsAPI.loadPostsWithFilter(PostFilterType.Top) { (posts: [Post]!) in
       self.posts = posts
       self.loadingIndicator.stopAnimating()
       self.tableView.reloadData()
@@ -50,4 +71,7 @@ class ArticlesViewController: UITableViewController {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
   
+  override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    segue.applyBlurToSourceViewBackground()
+  }
 }

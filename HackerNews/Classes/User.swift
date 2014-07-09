@@ -13,6 +13,6 @@ struct User {
   let username: String
   let karma: Int
   let age: Int
-  let aboutInfo: String
+  let aboutInfo: String?
   
 }

@@ -11,6 +11,6 @@ import UIKit
 protocol HackerNewsAPI {
   
   func logInWithUsername(username: String, password: String, completion: ((User!) -> Void)!)
-  func loadPostsWithFilter(filter: PostFilterType, completion: ((Post[]!) -> Void)!)
+  func loadPostsWithFilter(filter: PostFilterType, completion: (([Post]!) -> Void)!)
   
 }

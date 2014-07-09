@@ -14,6 +14,11 @@
 		AE0AD41A1964977C0062524F /* HackerNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD4181964977C0062524F /* HackerNewsTests.swift */; };
 		AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */; };
 		AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41E1964ACC30062524F /* LoginViewController.swift */; };
+		AE0CC549196C9166000E03E3 /* LibHNUserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */; };
+		AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */; };
+		AE105FCA196DCFAE00E8C6A9 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */; };
+		AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */; };
+		AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */; };
 		AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77119651D5600916826 /* ArticleTableViewCell.swift */; };
 		AE67F77419651DFE00916826 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77319651DFE00916826 /* DialogView.swift */; };
 		AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */; };
@@ -58,7 +63,13 @@
 		AE0AD4191964977C0062524F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		AE0AD41E1964ACC30062524F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserStore.swift; sourceTree = "<group>"; };
+		AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataAccess.swift; sourceTree = "<group>"; };
+		AE0CC54C196C95CB000E03E3 /* HackerNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HackerNews.entitlements; sourceTree = "<group>"; };
 		AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNews-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCredentialStore.swift; sourceTree = "<group>"; };
+		AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurBackgroundSegueExtension.swift; sourceTree = "<group>"; };
 		AE67F77119651D5600916826 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AE67F77319651DFE00916826 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 		AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNewsAPI.swift; sourceTree = "<group>"; };
@@ -93,6 +104,7 @@
 		AE0AD3DA1964966B0062524F = {
 			isa = PBXGroup;
 			children = (
+				AE0CC54C196C95CB000E03E3 /* HackerNews.entitlements */,
 				AE0AD405196497230062524F /* Classes */,
 				AE0AD408196497230062524F /* Resources */,
 				AE0AD3E41964966B0062524F /* Products */,
@@ -117,6 +129,10 @@
 				AE0AD406196497230062524F /* AppDelegate.swift */,
 				AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */,
 				AE721E181965DAEF008C9338 /* User.swift */,
+				AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */,
+				AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */,
+				AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */,
+				AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */,
 				AEBC8CDE1965E008001F8846 /* Post.swift */,
 				AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */,
 				AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */,
@@ -126,6 +142,7 @@
 				AE0AD41E1964ACC30062524F /* LoginViewController.swift */,
 				AE67F77319651DFE00916826 /* DialogView.swift */,
 				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
+				AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */,
 				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
 				AE0AD407196497230062524F /* ArticleViewController.swift */,
 				AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */,
@@ -212,6 +229,12 @@
 				TargetAttributes = {
 					AE0AD3E21964966B0062524F = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 72NX6HE832;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					AE0AD3F41964966C0062524F = {
 						CreatedOnToolsVersion = 6.0;
@@ -295,16 +318,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE105FCA196DCFAE00E8C6A9 /* CredentialStore.swift in Sources */,
 				AEBC8CD91965DC86001F8846 /* LibHNHackerNewsAPI.swift in Sources */,
 				AEBC8CE11965E169001F8846 /* LibHNPostToPost.swift in Sources */,
 				AEBC8CDD1965DE6C001F8846 /* ObjectsFactory.swift in Sources */,
 				AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */,
 				AEBC8CDF1965E008001F8846 /* Post.swift in Sources */,
 				AEBC8CE31965E3B0001F8846 /* LibHNPostTypeImages.swift in Sources */,
+				AE0CC549196C9166000E03E3 /* LibHNUserStore.swift in Sources */,
+				AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */,
+				AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */,
 				AEBC8CDB1965DCC2001F8846 /* LibHNUserToUser.swift in Sources */,
 				AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */,
 				AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */,
 				AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */,
+				AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */,
 				AE721E191965DAEF008C9338 /* User.swift in Sources */,
 				AE0AD40F196497230062524F /* ArticleViewController.swift in Sources */,
 				AE67F77419651DFE00916826 /* DialogView.swift in Sources */,
@@ -433,9 +461,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HackerNews.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Classes/HackerNews-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -448,9 +480,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HackerNews.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Classes/HackerNews-Bridging-Header.h";
 			};
 			name = Release;

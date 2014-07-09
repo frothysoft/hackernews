@@ -16,11 +16,18 @@ class LoginViewController: UIViewController, LoginInteractionHandler {
   
   @IBOutlet var userInterface: DialogView!
   let hackerNewsAPI: HackerNewsAPI
+  let userDataAccess: UserDataAccess
   
   init(coder aDecoder: NSCoder!) {
     let objectsFactory = (UIApplication.sharedApplication().delegate as AppDelegate).objectsFactory
     hackerNewsAPI = objectsFactory.hackerNewsAPI
+    userDataAccess = objectsFactory.userDataAccess
     super.init(coder: aDecoder)
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    userInterface.startCanvasAnimation()
   }
   
   override func viewDidLoad() {
@@ -40,9 +47,10 @@ class LoginViewController: UIViewController, LoginInteractionHandler {
     userInterface.showLoadingView()
     hackerNewsAPI.logInWithUsername(username, password: password) { (user: User!) in
       self.userInterface.hideLoadingView()
-      if user == nil {
+      if !user {
         self.userInterface.showErrorMessage()
       } else {
+        self.userDataAccess.storeUser(user, password: password)
         self.dismissViewControllerAnimated(true, completion: nil)
       }
     }

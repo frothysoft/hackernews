@@ -6,6 +6,12 @@
 // project.
 
 
+// ACSimpleKeychain
+#define COCOAPODS_POD_AVAILABLE_ACSimpleKeychain
+#define COCOAPODS_VERSION_MAJOR_ACSimpleKeychain 0
+#define COCOAPODS_VERSION_MINOR_ACSimpleKeychain 0
+#define COCOAPODS_VERSION_PATCH_ACSimpleKeychain 1
+
 // Canvas
 #define COCOAPODS_POD_AVAILABLE_Canvas
 #define COCOAPODS_VERSION_MAJOR_Canvas 0

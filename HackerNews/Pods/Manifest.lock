@@ -1,14 +1,17 @@
 PODS:
+  - ACSimpleKeychain (0.0.1)
   - Canvas (0.1.1)
   - libHN (1.1.1)
   - TPKeyboardAvoiding (1.2.3)
 
 DEPENDENCIES:
+  - ACSimpleKeychain (~> 0.0.1)
   - Canvas (~> 0.1.1)
   - libHN (~> 1.1.1)
   - TPKeyboardAvoiding (~> 1.2.3)
 
 SPEC CHECKSUMS:
+  ACSimpleKeychain: 5a471ccf5c85d23dcb603e9690b448832b892433
   Canvas: 45356a2e61087a776bfde5090676d290cf67f7f2
   libHN: d29d1e67be4ff186c4441e0a6b5f0af0c6c15b97
   TPKeyboardAvoiding: ca26afa683d829cb96fe69b887fc8be4178f0b9a

@@ -20,7 +20,7 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   @IBOutlet var passwordImageView: UIImageView!
   @IBOutlet var loadingView: UIView!
   
-  var showErrorHeight = 0.0
+  var showErrorHeight: Float = 0.0
   
   @IBAction func logInButtonPressed(sender: AnyObject) {
     hideKeyboard()    
@@ -29,7 +29,7 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   
   override func willMoveToSuperview(newSuperview: UIView!) {
     super.willMoveToSuperview(newSuperview)
-    showErrorHeight = frame.height + 40
+    showErrorHeight = frame.size.height + 40.0
   }
   
   func hideKeyboard() {

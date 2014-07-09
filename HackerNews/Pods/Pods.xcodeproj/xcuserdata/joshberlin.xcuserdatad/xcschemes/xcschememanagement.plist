@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-ACSimpleKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Canvas.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0179639BEEB149408941B716</key>
+		<key>450A05F7E1C5472D853D2C3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0FE5FE016F794374A89461E2</key>
+		<key>5F754AD7D6FD4C46AAB4E2D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>387E555D6B304E36ACC88B43</key>
+		<key>667DE6F92CE54E4CB49C66FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53A0AE95F6BC4635968E5F6F</key>
+		<key>6E0CDFBA2DFD4DB9B4AE4C74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFBE5592602D46AA837C3872</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -4,3 +4,4 @@ inhibit_all_warnings!
 pod 'Canvas', '~> 0.1.1'
 pod 'libHN', '~> 1.1.1'
 pod 'TPKeyboardAvoiding', '~> 1.2.3'
+pod 'ACSimpleKeychain', '~> 0.0.1'

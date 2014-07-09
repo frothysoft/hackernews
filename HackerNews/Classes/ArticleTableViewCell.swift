@@ -15,15 +15,18 @@ class ArticleTableViewCell: UITableViewCell {
   @IBOutlet var usernameLabel : UILabel
   @IBOutlet var pointsLabel : UILabel
   @IBOutlet var commentsLabel : UILabel
-  @IBOutlet var dateLabel : UILabel
   
   func displayPost(post: Post) {
     headlineLabel.text = post.title
-    usernameLabel.text = post.username
     pointsLabel.text = "\(post.points)"
     commentsLabel.text = "\(post.commentCount)"
     typeImageView.image = post.typeImage
-    dateLabel.text = post.timeCreatedString
+    
+    // TODO: Show the time created in the top right of the cell.
+    var info = String()
+    if !post.username.isEmpty { info = post.username + " " }
+    info += post.timeCreatedString
+    usernameLabel.text = info
   }
   
 }
