@@ -11,9 +11,12 @@ import UIKit
 class ArticlesViewController: UITableViewController {
   
   var posts: [Post] = []
+  var selectedPost: Post? = nil
   @IBOutlet var loadingIndicator : UIActivityIndicatorView
   let hackerNewsAPI: HackerNewsAPI
   let userDataAccess: UserDataAccess
+  let articleSegueIdentifier = "articlesToArticle"
+  let loginSegueIdentifier = "articlesToLogin"
 
   init(coder aDecoder: NSCoder!) {
     let objectsFactory = (UIApplication.sharedApplication().delegate as AppDelegate).objectsFactory
@@ -69,9 +72,23 @@ class ArticlesViewController: UITableViewController {
   
   override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    selectedPost = posts[indexPath.item]
+    performSegueWithIdentifier(articleSegueIdentifier, sender: self)
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    if segue.identifier == articleSegueIdentifier { prepareForArticleSegue(segue, sender: sender) }
+    else if segue.identifier == loginSegueIdentifier { prepareForLoginSegue(segue, sender: sender) }
+  }
+  
+  func prepareForArticleSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    if let articleViewController = segue.destinationViewController as? ArticleViewController {
+      if let post = selectedPost { articleViewController.post = post }
+    }
+  }
+  
+  func prepareForLoginSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
     segue.applyBlurToSourceViewBackground()
   }
+  
 }

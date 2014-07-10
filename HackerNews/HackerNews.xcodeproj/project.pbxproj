@@ -153,10 +153,10 @@
 		AE0AD408196497230062524F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */,
 				AE0AD409196497230062524F /* Main.storyboard */,
 				AE0AD40B196497230062524F /* Images.xcassets */,
 				AE0AD40C196497230062524F /* Info.plist */,
+				AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

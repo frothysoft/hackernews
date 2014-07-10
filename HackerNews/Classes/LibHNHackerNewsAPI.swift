@@ -23,9 +23,11 @@ class LibHNHackerNewsAPI: HackerNewsAPI {
   func loadPostsWithFilter(filter: PostFilterType, completion: (([Post]!) -> Void)!) {
     HNManager.sharedManager().loadPostsWithFilter(PostFilterType.Top) { (hnPosts: [AnyObject]!) in
       var posts: [Post] = []
-      for hnPost in hnPosts as [HNPost] {
-        var post = Post.postFromHNPost(hnPost)
-        posts += post
+      if hnPosts {
+        for hnPost in hnPosts as [HNPost] {
+          var post = Post.postFromHNPost(hnPost)
+          posts += post
+        }
       }
       if completion { completion(posts) }
     }

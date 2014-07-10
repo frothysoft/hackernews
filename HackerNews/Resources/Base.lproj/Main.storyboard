@@ -164,52 +164,6 @@
             </objects>
             <point key="canvasLocation" x="768" y="-475"/>
         </scene>
-        <!--Article View Controller-->
-        <scene sceneID="2cF-uf-aJM">
-            <objects>
-                <viewController id="W10-86-ndv" customClass="ArticleViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xo5-jn-trR"/>
-                        <viewControllerLayoutGuide type="bottom" id="FhV-Yb-N0T"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="faj-60-DSr">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0VX-QF-7sh">
-                                <rect key="frame" x="0.0" y="0.0" width="486" height="480"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4G-ug-tVL">
-                                        <rect key="frame" x="-20" y="-21" width="360" height="1281"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Article" translatesAutoresizingMaskIntoConstraints="NO" id="bA4-Df-XYU">
-                                                <rect key="frame" x="20" y="21" width="320" height="1240"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSz-Hf-bkB">
-                                                <rect key="frame" x="20" y="20" width="137" height="83"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="128" id="w5G-gj-5WX"/>
-                                                </constraints>
-                                                <state key="normal" title="BUTTON">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="unwindFromView:" destination="W10-86-ndv" eventType="touchUpInside" id="rSo-8W-eI3"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rIT-6S-lbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1457" y="129"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="seC-RP-zmb">
             <objects>
@@ -366,21 +320,47 @@
                         <barButtonItem key="rightBarButtonItem" image="person" id="gQl-47-SLe">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="Mxh-dL-Sm8"/>
+                                <segue destination="BYZ-38-t0r" kind="modal" identifier="articlesToLogin" modalTransitionStyle="crossDissolve" id="Mxh-dL-Sm8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="loadingIndicator" destination="V80-C2-dA8" id="gdf-2n-j06"/>
+                        <segue destination="ASy-da-p8e" kind="show" identifier="articlesToArticle" id="3Ty-Mc-2fr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6X4-RW-jf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800" y="109"/>
         </scene>
+        <!--Article View Controller-->
+        <scene sceneID="cZN-eu-ylH">
+            <objects>
+                <tableViewController id="ASy-da-p8e" customClass="ArticleViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lu2-eO-JjG">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" id="hFH-1N-5wg">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hFH-1N-5wg" id="t7m-OG-mVI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ASy-da-p8e" id="cQ3-0w-iDz"/>
+                            <outlet property="delegate" destination="ASy-da-p8e" id="OHp-o8-5MA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhp-Lc-5Uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="109"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Article" width="320" height="1240"/>
         <image name="badge-type" width="51" height="50"/>
         <image name="button-orange" width="250" height="44"/>
         <image name="close-button" width="25" height="25"/>

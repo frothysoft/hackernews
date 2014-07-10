@@ -8,11 +8,9 @@
 
 import UIKit
 
-class ArticleViewController: UIViewController {
+class ArticleViewController: UITableViewController {
   
-  @IBAction func unwindFromView(segue: UIStoryboardSegue) {
-    navigationController.popViewControllerAnimated(true)
-  }
-
+  var post: Post? = nil
+  
 }
 
