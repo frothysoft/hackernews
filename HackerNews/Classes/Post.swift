@@ -16,6 +16,7 @@ struct Post {
   let points: Int
   let commentCount: Int
   let timeCreatedString: String
+  let urlString: String
   // TODO: Create our own post type enum
   let type: PostType
   

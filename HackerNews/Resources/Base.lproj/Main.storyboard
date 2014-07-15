@@ -553,10 +553,46 @@
                             <outlet property="delegate" destination="ASy-da-p8e" id="OHp-o8-5MA"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="4Ig-LA-XgL" kind="show" identifier="articleToWebView" id="ITi-3s-rBt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhp-Lc-5Uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1398" y="108"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="iPd-mG-Pvk">
+            <objects>
+                <viewController id="4Ig-LA-XgL" customClass="WebViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fxu-qq-0s7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ryR-8W-hmi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xie-mp-3Uc">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ek-zf-jla">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5ek-zf-jla" secondAttribute="centerX" id="1vb-xh-J9i"/>
+                            <constraint firstAttribute="centerY" secondItem="5ek-zf-jla" secondAttribute="centerY" id="Ice-CY-ZyW"/>
+                            <constraint firstAttribute="width" secondItem="5ek-zf-jla" secondAttribute="width" id="cu8-hL-ckx"/>
+                            <constraint firstAttribute="height" secondItem="5ek-zf-jla" secondAttribute="height" id="qtO-D0-mWZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5ek-zf-jla" id="kXO-zq-kME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e15-a8-BpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="108"/>
         </scene>
     </scenes>
     <resources>

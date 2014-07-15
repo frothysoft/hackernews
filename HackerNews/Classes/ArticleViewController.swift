@@ -72,6 +72,9 @@ class ArticleViewController: UITableViewController {
   
   override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    if indexPath.row == 0 {
+      if let p = post { performSegueWithIdentifier("articleToWebView", sender: self) }
+    }
   }
   
   func cellIdentifierForIndexPath(indexPath: NSIndexPath) -> String {
@@ -79,6 +82,12 @@ class ArticleViewController: UITableViewController {
       return "ArticleCell"
     } else {
       return "CommentCell"
+    }
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    if let webViewController = segue.destinationViewController as? WebViewController {
+      if let p = post { webViewController.URL = NSURL(string: p.urlString) }
     }
   }
   
