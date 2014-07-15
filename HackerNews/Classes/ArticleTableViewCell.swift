@@ -18,11 +18,11 @@ class ArticleTableViewCell: UITableViewCell {
   @IBOutlet var descriptionLabel : UILabel
   
   func displayPost(post: Post) {
-    println(post.title)
     headlineLabel.text = post.title
     pointsLabel.text = "\(post.points)"
     commentsLabel.text = "\(post.commentCount)"
     typeImageView.image = post.typeImage()
+    if descriptionLabel { descriptionLabel.text = "" }
     displayUsername(post.username, timeCreatedString: post.timeCreatedString)
   }
   

@@ -492,21 +492,15 @@
                                                         <constraint firstAttribute="height" constant="16" id="iGk-IT-h2m"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="26" translatesAutoresizingMaskIntoConstraints="NO" id="ZZF-ic-NNG">
-                                                    <rect key="frame" x="26" y="0.0" width="26" height="18"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <color key="textColor" red="0.66024118659999997" green="0.71059143540000003" blue="0.75739240649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-reply" translatesAutoresizingMaskIntoConstraints="NO" id="mQm-UI-Vr8">
-                                                    <rect key="frame" x="60" y="1" width="20" height="15"/>
+                                                    <rect key="frame" x="33" y="1" width="20" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="GKH-Cs-lfV"/>
                                                         <constraint firstAttribute="width" constant="20" id="Ke6-kJ-WXa"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reply" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="37" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-Tx-EdI">
-                                                    <rect key="frame" x="88" y="0.0" width="37" height="18"/>
+                                                    <rect key="frame" x="61" y="0.0" width="37" height="18"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" red="0.66024118659999997" green="0.71059143540000003" blue="0.75739240649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -516,13 +510,11 @@
                                             <constraints>
                                                 <constraint firstItem="6fX-PD-zEG" firstAttribute="leading" secondItem="qOg-RG-mEG" secondAttribute="leading" id="6pV-OK-rtG"/>
                                                 <constraint firstItem="6fX-PD-zEG" firstAttribute="top" secondItem="qOg-RG-mEG" secondAttribute="top" id="83F-6f-et1"/>
-                                                <constraint firstItem="ZZF-ic-NNG" firstAttribute="top" secondItem="qOg-RG-mEG" secondAttribute="top" id="K2q-o5-0lf"/>
-                                                <constraint firstItem="ZZF-ic-NNG" firstAttribute="leading" secondItem="6fX-PD-zEG" secondAttribute="trailing" constant="8" id="WCx-Yb-zgR"/>
+                                                <constraint firstItem="mQm-UI-Vr8" firstAttribute="leading" secondItem="6fX-PD-zEG" secondAttribute="trailing" constant="15" id="dG6-Bq-FIB"/>
                                                 <constraint firstAttribute="bottom" secondItem="6fX-PD-zEG" secondAttribute="bottom" id="eiL-Wg-fqp"/>
                                                 <constraint firstItem="X1q-Tx-EdI" firstAttribute="top" secondItem="qOg-RG-mEG" secondAttribute="top" id="ghG-vI-tnI"/>
                                                 <constraint firstItem="X1q-Tx-EdI" firstAttribute="leading" secondItem="mQm-UI-Vr8" secondAttribute="trailing" constant="8" id="qOw-rv-I8B"/>
                                                 <constraint firstItem="mQm-UI-Vr8" firstAttribute="top" secondItem="qOg-RG-mEG" secondAttribute="top" constant="1" id="wvt-P6-sxu"/>
-                                                <constraint firstItem="mQm-UI-Vr8" firstAttribute="leading" secondItem="ZZF-ic-NNG" secondAttribute="trailing" constant="8" id="yQV-TZ-GkP"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="435" translatesAutoresizingMaskIntoConstraints="NO" id="06r-mc-myg">
@@ -551,9 +543,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="commentsLabel" destination="X1q-Tx-EdI" id="ZaH-Oe-7CQ"/>
                                     <outlet property="descriptionLabel" destination="06r-mc-myg" id="o25-Sz-QEb"/>
-                                    <outlet property="pointsLabel" destination="ZZF-ic-NNG" id="HXp-0b-45G"/>
                                     <outlet property="usernameLabel" destination="zGR-uO-IjB" id="d6k-8q-jnY"/>
                                 </connections>
                             </tableViewCell>

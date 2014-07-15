@@ -10,7 +10,8 @@ import UIKit
 
 class ArticleViewController: UITableViewController {
   
-  var post: Post? = nil
+  var post: Post?
+  var postText: String? = nil // TODO: Remove this hack when the text is included in the Post.
   let hackerNewsAPI: HackerNewsAPI
   var comments: [Comment] = []
   
@@ -34,7 +35,14 @@ class ArticleViewController: UITableViewController {
   func loadComments() {
     if let p = post {
       hackerNewsAPI.loadCommentsForPost(p) { (comments: [Comment]!) in
-        self.comments = comments
+        // TODO: Do this in the hacker news API class.
+        if (p.type == PostType.AskHN || p.type == PostType.Jobs) {
+          let specialComment = comments[0]
+          self.postText = specialComment.text
+          self.comments = Array(comments[1..<comments.count])
+        } else {
+          self.comments = comments
+        }
         self.tableView.reloadData()
       }
     }
@@ -51,6 +59,8 @@ class ArticleViewController: UITableViewController {
       if indexPath.row == 0 {
         if let p = post {
           cell.displayPost(p)
+          // TODO: Remove this hack when the post has text.
+          if let text = postText { cell.descriptionLabel.text = text }
         }
       } else {
         let comment = comments[indexPath.row - 1]

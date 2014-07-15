@@ -42,8 +42,13 @@ class LibHNHackerNewsAPI: HackerNewsAPI {
       var comments: [Comment] = []
       if hnComments {
         for hnComment in hnComments as [HNComment] {
-          var comment = Comment(comment: hnComment)
-          comments += comment
+          // This is a hack since LibHN adds the ask text and job text as a special first comment in the list.
+          if hnComment.Type == HNCommentType.AskHN || hnComment.Type == HNCommentType.Jobs {
+            comments += Comment(commentId: "", username: "", text: hnComment.Text, timeCreatedString: "", replyURLString: "", level: 0)
+          } else {
+            var comment = Comment(comment: hnComment)
+            comments += comment
+          }
         }
       }
       if completion { completion(comments) }
