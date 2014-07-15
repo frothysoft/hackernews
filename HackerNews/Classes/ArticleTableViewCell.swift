@@ -15,17 +15,27 @@ class ArticleTableViewCell: UITableViewCell {
   @IBOutlet var usernameLabel : UILabel
   @IBOutlet var pointsLabel : UILabel
   @IBOutlet var commentsLabel : UILabel
+  @IBOutlet var descriptionLabel : UILabel
   
   func displayPost(post: Post) {
+    println(post.title)
     headlineLabel.text = post.title
     pointsLabel.text = "\(post.points)"
     commentsLabel.text = "\(post.commentCount)"
-    typeImageView.image = post.typeImage
-    
+    typeImageView.image = post.typeImage()
+    displayUsername(post.username, timeCreatedString: post.timeCreatedString)
+  }
+  
+  func displayComment(comment: Comment) {
+    descriptionLabel.text = comment.text
+    displayUsername(comment.username, timeCreatedString: comment.timeCreatedString)
+  }
+  
+  func displayUsername(username: String, timeCreatedString: String) {
     // TODO: Show the time created in the top right of the cell.
     var info = String()
-    if !post.username.isEmpty { info = post.username + " " }
-    info += post.timeCreatedString
+    if !username.isEmpty { info = username + " " }
+    info += timeCreatedString
     usernameLabel.text = info
   }
   

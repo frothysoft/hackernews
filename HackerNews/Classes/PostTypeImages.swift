@@ -1,5 +1,5 @@
 //
-//  LibHNPostTypeImages.swift
+//  PostTypeImages.swift
 //  HackerNews
 //
 //  Created by Josh Berlin on 7/3/14.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-extension HNPost {
+extension Post {
   func typeImage() -> UIImage! {
-    var type = self.valueForKey("Type").integerValue
-    if type == 1 {
+    if self.type == PostType.AskHN {
       return UIImage(named: "badge-ask")
-    } else if type == 2 {
+    } else if self.type == PostType.Jobs {
       return UIImage(named: "badge-job")
-    } else if self.Title.bridgeToObjectiveC().containsString("Show HN: ") {
+    } else if self.title.bridgeToObjectiveC().containsString("Show HN: ") {
       return UIImage(named: "badge-show")
     } else {
       return nil

@@ -10,6 +10,6 @@ import UIKit
 
 extension Post {
   static func postFromHNPost(post: HNPost) -> Post {
-    return Post(title: post.Title, username: post.Username, points: Int(post.Points), commentCount: Int(post.CommentCount), timeCreatedString: post.TimeCreatedString, typeImage: post.typeImage())
+    return Post(postId: post.PostId, title: post.Title, username: post.Username, points: Int(post.Points), commentCount: Int(post.CommentCount), timeCreatedString: post.TimeCreatedString, type: post.Type)
   }
 }

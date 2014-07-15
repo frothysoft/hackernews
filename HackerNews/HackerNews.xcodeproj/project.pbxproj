@@ -14,7 +14,6 @@
 		AE0AD41A1964977C0062524F /* HackerNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD4181964977C0062524F /* HackerNewsTests.swift */; };
 		AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */; };
 		AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AD41E1964ACC30062524F /* LoginViewController.swift */; };
-		AE0CC549196C9166000E03E3 /* LibHNUserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */; };
 		AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */; };
 		AE105FCA196DCFAE00E8C6A9 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */; };
 		AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */; };
@@ -24,12 +23,15 @@
 		AE67F77419651DFE00916826 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77319651DFE00916826 /* DialogView.swift */; };
 		AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */; };
 		AE721E191965DAEF008C9338 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE721E181965DAEF008C9338 /* User.swift */; };
-		AEBC8CD91965DC86001F8846 /* LibHNHackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */; };
-		AEBC8CDB1965DCC2001F8846 /* LibHNUserToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */; };
+		AE9CFBF01974BA99002B75BE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBEF1974BA99002B75BE /* Comment.swift */; };
+		AE9CFBF71974BB2F002B75BE /* LibHNHackerNewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBF21974BB2F002B75BE /* LibHNHackerNewsAPI.swift */; };
+		AE9CFBF81974BB2F002B75BE /* LibHNPostToPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBF31974BB2F002B75BE /* LibHNPostToPost.swift */; };
+		AE9CFBFA1974BB2F002B75BE /* LibHNUserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBF51974BB2F002B75BE /* LibHNUserStore.swift */; };
+		AE9CFBFB1974BB2F002B75BE /* LibHNUserToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBF61974BB2F002B75BE /* LibHNUserToUser.swift */; };
+		AE9CFBFD1974BB3F002B75BE /* LibHNCommentToComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */; };
+		AE9CFC011974E75C002B75BE /* PostTypeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFC001974E75C002B75BE /* PostTypeImages.swift */; };
 		AEBC8CDD1965DE6C001F8846 /* ObjectsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */; };
 		AEBC8CDF1965E008001F8846 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDE1965E008001F8846 /* Post.swift */; };
-		AEBC8CE11965E169001F8846 /* LibHNPostToPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */; };
-		AEBC8CE31965E3B0001F8846 /* LibHNPostTypeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */; };
 		E0001531837E4BB68C7BFD33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0780E026FA4885ADD6C934 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +66,6 @@
 		AE0AD4191964977C0062524F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		AE0AD41E1964ACC30062524F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserStore.swift; sourceTree = "<group>"; };
 		AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataAccess.swift; sourceTree = "<group>"; };
 		AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
@@ -75,12 +76,15 @@
 		AE67F77319651DFE00916826 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 		AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNewsAPI.swift; sourceTree = "<group>"; };
 		AE721E181965DAEF008C9338 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNHackerNewsAPI.swift; sourceTree = "<group>"; };
-		AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserToUser.swift; sourceTree = "<group>"; };
+		AE9CFBEF1974BA99002B75BE /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		AE9CFBF21974BB2F002B75BE /* LibHNHackerNewsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNHackerNewsAPI.swift; sourceTree = "<group>"; };
+		AE9CFBF31974BB2F002B75BE /* LibHNPostToPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNPostToPost.swift; sourceTree = "<group>"; };
+		AE9CFBF51974BB2F002B75BE /* LibHNUserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserStore.swift; sourceTree = "<group>"; };
+		AE9CFBF61974BB2F002B75BE /* LibHNUserToUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNUserToUser.swift; sourceTree = "<group>"; };
+		AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNCommentToComment.swift; sourceTree = "<group>"; };
+		AE9CFC001974E75C002B75BE /* PostTypeImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTypeImages.swift; sourceTree = "<group>"; };
 		AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsFactory.swift; sourceTree = "<group>"; };
 		AEBC8CDE1965E008001F8846 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNPostToPost.swift; sourceTree = "<group>"; };
-		AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNPostTypeImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,16 +133,14 @@
 				AE0AD406196497230062524F /* AppDelegate.swift */,
 				AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */,
 				AE721E181965DAEF008C9338 /* User.swift */,
+				AEBC8CDE1965E008001F8846 /* Post.swift */,
+				AE9CFC001974E75C002B75BE /* PostTypeImages.swift */,
+				AE9CFBEF1974BA99002B75BE /* Comment.swift */,
 				AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */,
 				AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */,
 				AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */,
-				AE0CC548196C9166000E03E3 /* LibHNUserStore.swift */,
-				AEBC8CDE1965E008001F8846 /* Post.swift */,
-				AEBC8CDA1965DCC2001F8846 /* LibHNUserToUser.swift */,
-				AEBC8CE01965E169001F8846 /* LibHNPostToPost.swift */,
-				AEBC8CE21965E3B0001F8846 /* LibHNPostTypeImages.swift */,
+				AE9CFBF11974BB2F002B75BE /* LibHN */,
 				AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */,
-				AEBC8CD81965DC86001F8846 /* LibHNHackerNewsAPI.swift */,
 				AE0AD41E1964ACC30062524F /* LoginViewController.swift */,
 				AE67F77319651DFE00916826 /* DialogView.swift */,
 				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
@@ -168,6 +170,18 @@
 				AE0AD4191964977C0062524F /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		AE9CFBF11974BB2F002B75BE /* LibHN */ = {
+			isa = PBXGroup;
+			children = (
+				AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */,
+				AE9CFBF21974BB2F002B75BE /* LibHNHackerNewsAPI.swift */,
+				AE9CFBF31974BB2F002B75BE /* LibHNPostToPost.swift */,
+				AE9CFBF51974BB2F002B75BE /* LibHNUserStore.swift */,
+				AE9CFBF61974BB2F002B75BE /* LibHNUserToUser.swift */,
+			);
+			path = LibHN;
 			sourceTree = "<group>";
 		};
 		CC3A868C6E5648D19BE0D01B /* Frameworks */ = {
@@ -321,23 +335,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE105FCA196DCFAE00E8C6A9 /* CredentialStore.swift in Sources */,
-				AEBC8CD91965DC86001F8846 /* LibHNHackerNewsAPI.swift in Sources */,
-				AEBC8CE11965E169001F8846 /* LibHNPostToPost.swift in Sources */,
+				AE9CFBFB1974BB2F002B75BE /* LibHNUserToUser.swift in Sources */,
 				AEBC8CDD1965DE6C001F8846 /* ObjectsFactory.swift in Sources */,
+				AE9CFC011974E75C002B75BE /* PostTypeImages.swift in Sources */,
 				AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */,
 				AEBC8CDF1965E008001F8846 /* Post.swift in Sources */,
-				AEBC8CE31965E3B0001F8846 /* LibHNPostTypeImages.swift in Sources */,
-				AE0CC549196C9166000E03E3 /* LibHNUserStore.swift in Sources */,
+				AE9CFBFA1974BB2F002B75BE /* LibHNUserStore.swift in Sources */,
 				AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */,
 				AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */,
-				AEBC8CDB1965DCC2001F8846 /* LibHNUserToUser.swift in Sources */,
 				AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */,
+				AE9CFBF71974BB2F002B75BE /* LibHNHackerNewsAPI.swift in Sources */,
 				AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */,
 				AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */,
 				AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */,
+				AE9CFBF01974BA99002B75BE /* Comment.swift in Sources */,
+				AE9CFBFD1974BB3F002B75BE /* LibHNCommentToComment.swift in Sources */,
 				AE721E191965DAEF008C9338 /* User.swift in Sources */,
 				AE0AD40F196497230062524F /* ArticleViewController.swift in Sources */,
 				AE67F77419651DFE00916826 /* DialogView.swift in Sources */,
+				AE9CFBF81974BB2F002B75BE /* LibHNPostToPost.swift in Sources */,
 				AE0AD40D196497230062524F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

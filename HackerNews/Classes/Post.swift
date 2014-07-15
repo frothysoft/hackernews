@@ -10,11 +10,13 @@ import UIKit
 
 struct Post {
   
+  let postId: String
   let title: String
   let username: String
   let points: Int
   let commentCount: Int
   let timeCreatedString: String
-  let typeImage: UIImage!
+  // TODO: Create our own post type enum
+  let type: PostType
   
 }

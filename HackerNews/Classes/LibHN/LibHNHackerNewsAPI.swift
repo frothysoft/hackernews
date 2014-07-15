@@ -33,4 +33,21 @@ class LibHNHackerNewsAPI: HackerNewsAPI {
     }
   }
   
+  func loadCommentsForPost(post: Post, completion: (([Comment]!) -> Void)!) {
+    // The LibHN API only needs a HNPost with an id and type to load the comments.
+    var hnPost = HNPost()
+    hnPost.PostId = post.postId
+    hnPost.Type = post.type
+    HNManager.sharedManager().loadCommentsFromPost(hnPost) { (hnComments: [AnyObject]!) in
+      var comments: [Comment] = []
+      if hnComments {
+        for hnComment in hnComments as [HNComment] {
+          var comment = Comment(comment: hnComment)
+          comments += comment
+        }
+      }
+      if completion { completion(comments) }
+    }
+  }
+  
 }
