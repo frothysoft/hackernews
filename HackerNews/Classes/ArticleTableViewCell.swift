@@ -28,6 +28,7 @@ class ArticleTableViewCell: UITableViewCell {
   
   func displayComment(comment: Comment) {
     descriptionLabel.text = comment.text
+    // TODO: Deal with the comments label. There is no number value for post comment upvotes.
     displayUsername(comment.username, timeCreatedString: comment.timeCreatedString)
   }
   
