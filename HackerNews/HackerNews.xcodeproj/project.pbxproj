@@ -17,6 +17,7 @@
 		AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */; };
 		AE105FCA196DCFAE00E8C6A9 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */; };
 		AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */; };
+		AE1105EE19761C6C0096326C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1105ED19761C6C0096326C /* Colors.swift */; };
 		AE538F8D196DDD3D00752B59 /* HackerNews.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */; };
 		AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */; };
 		AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77119651D5600916826 /* ArticleTableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
 		AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCredentialStore.swift; sourceTree = "<group>"; };
+		AE1105ED19761C6C0096326C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HackerNews.entitlements; sourceTree = "<group>"; };
 		AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurBackgroundSegueExtension.swift; sourceTree = "<group>"; };
 		AE67F77119651D5600916826 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,8 +143,8 @@
 				AE105FC9196DCFAE00E8C6A9 /* CredentialStore.swift */,
 				AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */,
 				AE0CC54A196C9175000E03E3 /* UserDataAccess.swift */,
-				AE9CFBF11974BB2F002B75BE /* LibHN */,
 				AE721E161965D9B1008C9338 /* HackerNewsAPI.swift */,
+				AE9CFBF11974BB2F002B75BE /* LibHN */,
 				AE0AD41E1964ACC30062524F /* LoginViewController.swift */,
 				AE67F77319651DFE00916826 /* DialogView.swift */,
 				AE0AD41C1964AC3A0062524F /* ArticlesViewController.swift */,
@@ -150,6 +152,7 @@
 				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
 				AE0AD407196497230062524F /* ArticleViewController.swift */,
 				AE9CFC041975EE5F002B75BE /* WebViewController.swift */,
+				AE1105ED19761C6C0096326C /* Colors.swift */,
 				AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */,
 			);
 			path = Classes;
@@ -178,8 +181,8 @@
 		AE9CFBF11974BB2F002B75BE /* LibHN */ = {
 			isa = PBXGroup;
 			children = (
-				AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */,
 				AE9CFBF21974BB2F002B75BE /* LibHNHackerNewsAPI.swift */,
+				AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */,
 				AE9CFBF31974BB2F002B75BE /* LibHNPostToPost.swift */,
 				AE9CFBF51974BB2F002B75BE /* LibHNUserStore.swift */,
 				AE9CFBF61974BB2F002B75BE /* LibHNUserToUser.swift */,
@@ -350,6 +353,7 @@
 				AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */,
 				AE9CFBF71974BB2F002B75BE /* LibHNHackerNewsAPI.swift in Sources */,
 				AE0AD41F1964ACC30062524F /* LoginViewController.swift in Sources */,
+				AE1105EE19761C6C0096326C /* Colors.swift in Sources */,
 				AE0AD41D1964AC3A0062524F /* ArticlesViewController.swift in Sources */,
 				AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */,
 				AE9CFBF01974BA99002B75BE /* Comment.swift in Sources */,

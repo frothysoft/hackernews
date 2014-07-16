@@ -43,8 +43,9 @@ class LibHNHackerNewsAPI: HackerNewsAPI {
       if hnComments {
         for hnComment in hnComments as [HNComment] {
           // This is a hack since LibHN adds the ask text and job text as a special first comment in the list.
+          // TODO: Add text to the Post.
           if hnComment.Type == HNCommentType.AskHN || hnComment.Type == HNCommentType.Jobs {
-            comments += Comment(commentId: "", username: "", text: hnComment.Text, timeCreatedString: "", replyURLString: "", level: 0)
+            comments += Comment(commentId: "", username: "", text: hnComment.Text, timeCreatedString: "", replyURLString: "", level: 0, upvoteURLAddition: "")
           } else {
             var comment = Comment(comment: hnComment)
             comments += comment
@@ -52,6 +53,27 @@ class LibHNHackerNewsAPI: HackerNewsAPI {
         }
       }
       if completion { completion(comments) }
+    }
+  }
+  
+  func upvotePost(post: Post, completion: ((success: Bool) -> Void)!) {
+    upvoteHNObjectWithUpvoteURLAddition(post.upvoteURLAddition, completion)
+  }
+  
+  func upvoteComment(comment: Comment, completion: ((success: Bool) -> Void)!) {
+    upvoteHNObjectWithUpvoteURLAddition(comment.upvoteURLAddition, completion)
+  }
+  
+  func upvoteHNObjectWithUpvoteURLAddition(upvoteURLAddition: String?, completion: ((success: Bool) -> Void)!) {
+    println(upvoteURLAddition)
+    if let upvoteURL = upvoteURLAddition {
+      var hnPost = HNPost()
+      hnPost.UpvoteURLAddition = upvoteURL
+      HNManager.sharedManager().voteOnPostOrComment(hnPost, direction: VoteDirection.Up) { (success: Bool) in
+        if completion { completion(success: success) }
+      }
+    } else {
+      if completion { completion(success: false) }
     }
   }
   

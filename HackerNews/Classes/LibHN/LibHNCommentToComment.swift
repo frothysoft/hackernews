@@ -10,6 +10,6 @@ import UIKit
 
 extension Comment {
   init(comment: HNComment) {
-    self = Comment(commentId: comment.CommentId, username: comment.Username, text: comment.Text, timeCreatedString: comment.TimeCreatedString, replyURLString: comment.ReplyURLString, level: Int(comment.Level))
+    self = Comment(commentId: comment.CommentId, username: comment.Username, text: comment.Text, timeCreatedString: comment.TimeCreatedString, replyURLString: comment.ReplyURLString, level: Int(comment.Level), upvoteURLAddition: comment.UpvoteURLAddition)
   }
 }

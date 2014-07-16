@@ -12,6 +12,6 @@ protocol UserDataAccess {
   
   func storeUser(user: User, password: String)
   func deleteUser()
-  func loggedInUser() -> User!
+  func loggedInUser(completion: ( (user: User) -> Void)!)
 
 }

@@ -20,7 +20,7 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   @IBOutlet var passwordImageView: UIImageView!
   @IBOutlet var loadingView: UIView!
   
-  var showErrorHeight: Float = 0.0
+  var showErrorHeight: CGFloat = 0.0
   
   @IBAction func logInButtonPressed(sender: AnyObject) {
     hideKeyboard()    

@@ -54,20 +54,20 @@ class ArticleViewController: UITableViewController {
   
   override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!  {
     let id = cellIdentifierForIndexPath(indexPath)
-    var oCell = tableView.dequeueReusableCellWithIdentifier(id) as? ArticleTableViewCell
-    if let cell = oCell {
+    var cell = tableView.dequeueReusableCellWithIdentifier(id) as? ArticleTableViewCell
+    if let c = cell {
       if indexPath.row == 0 {
         if let p = post {
-          cell.displayPost(p)
+          c.displayPost(p)
           // TODO: Remove this hack when the post has text.
-          if let text = postText { cell.descriptionLabel.text = text }
+          if let text = postText { c.descriptionLabel.text = text }
         }
       } else {
         let comment = comments[indexPath.row - 1]
-        cell.displayComment(comment)
+        c.displayComment(comment)
       }
     }
-    return oCell
+    return cell
   }
   
   override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
@@ -87,7 +87,10 @@ class ArticleViewController: UITableViewController {
   
   override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
     if let webViewController = segue.destinationViewController as? WebViewController {
-      if let p = post { webViewController.URL = NSURL(string: p.urlString) }
+      if let p = post {
+        webViewController.URL = NSURL(string: p.urlString)
+        webViewController.post = p
+      }
     }
   }
   

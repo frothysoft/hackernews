@@ -11,7 +11,9 @@ import UIKit
 class WebViewController: UIViewController {
 
   @IBOutlet var webView: UIWebView
+  @IBOutlet var commentsButton: UIButton
   var URL: NSURL?
+  var post: Post?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,6 +21,29 @@ class WebViewController: UIViewController {
       var request = NSURLRequest(URL: url)
       webView.loadRequest(request)
     }
+    if let p = post {
+      var title = "\(p.commentCount) Comments"
+      commentsButton.setTitle(title, forState: .Normal)
+    }
+  }
+
+  @IBAction func commentsButtonPressed(sender: AnyObject) {
+    performSegueWithIdentifier("webViewToArticle", sender: self)
   }
   
+  @IBAction func shareButtonPressed(sender: AnyObject) {
+    if let p = post {
+      var shareString = "\(p.title): "
+      if let url = URL {
+        var activityViewController = UIActivityViewController(activityItems: [shareString, url], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: nil)
+      }
+    }
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    if let articleViewController = segue.destinationViewController as? ArticleViewController {
+      if let p = post { articleViewController.post = post }
+    }
+  }
 }

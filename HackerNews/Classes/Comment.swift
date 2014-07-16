@@ -16,5 +16,6 @@ struct Comment {
   let timeCreatedString: String
   let replyURLString: String
   let level: Int
+  let upvoteURLAddition: String
   
 }

@@ -28,18 +28,19 @@ class LibHNUserStore: UserDataAccess {
     credentialStore.removeCredentials()
   }
   
-  func loggedInUser() -> User! {
+  func loggedInUser(completion: ((user: User) -> Void)!) {
     if hnManager.userIsLoggedIn() {
       if let hnUser = hnManager.SessionUser {
-        return User(user: hnUser)
+        var user = User(user: hnUser)
+        if completion { completion(user: user) }
       }
     } else if let credentials = credentialStore.credentials() {
       // TODO: Do this in the app delegate.
       hackerNewsAPI.logInWithUsername(credentials.username, password: credentials.password) { (user: User!) in
         // TODO: Post a notification that the user was logged in.
+        if completion { completion(user: user) }
       }
     }
-    return nil
   }
   
 }

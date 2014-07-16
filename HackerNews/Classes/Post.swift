@@ -19,5 +19,6 @@ struct Post {
   let urlString: String
   // TODO: Create our own post type enum
   let type: PostType
+  let upvoteURLAddition: String?
   
 }
