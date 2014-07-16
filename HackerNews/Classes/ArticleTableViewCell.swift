@@ -35,7 +35,7 @@ class ArticleTableViewCell: UITableViewCell {
     pointsLabel.text = "\(post.points)"
     commentsLabel.text = "\(post.commentCount)"
     typeImageView.image = post.typeImage()
-    if descriptionLabel { descriptionLabel.text = "http://google.com" }
+    if descriptionLabel { descriptionLabel.text = "" }
     displayUsername(post.username, timeCreatedString: post.timeCreatedString)
   }
   
