@@ -15,5 +15,7 @@ protocol HackerNewsAPI {
   func loadCommentsForPost(post: Post, completion: (([Comment]!) -> Void)!)
   func upvotePost(post: Post, completion: ((success: Bool) -> Void)!)
   func upvoteComment(comment: Comment, completion: ((success: Bool) -> Void)!)
+  func replyToPost(post: Post, text: String, completion: ((success: Bool) -> Void)!)
+  func replyToComment(comment: Comment, text: String, completion: ((success: Bool) -> Void)!)
   
 }

@@ -65,11 +65,30 @@ class LibHNHackerNewsAPI: HackerNewsAPI {
   }
   
   func upvoteHNObjectWithUpvoteURLAddition(upvoteURLAddition: String?, completion: ((success: Bool) -> Void)!) {
-    println(upvoteURLAddition)
     if let upvoteURL = upvoteURLAddition {
       var hnPost = HNPost()
       hnPost.UpvoteURLAddition = upvoteURL
       HNManager.sharedManager().voteOnPostOrComment(hnPost, direction: VoteDirection.Up) { (success: Bool) in
+        if completion { completion(success: success) }
+      }
+    } else {
+      if completion { completion(success: false) }
+    }
+  }
+  
+  func replyToPost(post: Post, text: String, completion: ((success: Bool) -> Void)!) {
+    replyToHNObjectWithItemId(post.postId, text: text, completion)
+  }
+  
+  func replyToComment(comment: Comment, text: String, completion: ((success: Bool) -> Void)!) {
+    replyToHNObjectWithItemId(comment.commentId, text: text, completion)
+  }
+  
+  func replyToHNObjectWithItemId(itemId: String?, text: String, completion: ((success: Bool) -> Void)!) {
+    if let id = itemId {
+      var hnPost = HNPost()
+      hnPost.PostId = id
+      HNManager.sharedManager().replyToPostOrComment(hnPost, withText: text) { (success: Bool) in
         if completion { completion(success: success) }
       }
     } else {

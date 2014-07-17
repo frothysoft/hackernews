@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "069F80A1A6BF478AB17E98A2"
-               BuildableName = "libPods-TPKeyboardAvoiding.a"
-               BlueprintName = "Pods-TPKeyboardAvoiding"
+               BlueprintIdentifier = "F1BBD4370EA7444896985C65"
+               BuildableName = "libPods-SimpleAudioPlayer.a"
+               BlueprintName = "Pods-SimpleAudioPlayer"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

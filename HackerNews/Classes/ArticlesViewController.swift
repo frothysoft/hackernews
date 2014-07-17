@@ -31,18 +31,18 @@ class ArticlesViewController: UITableViewController, ArticleTableViewCellDelegat
     super.viewDidLoad()
     setUpTableView()
     setUpPullToRefresh()
-    // TODO: Monitor user updates using a user data access observer.
+    // TODO: Monitor user updates using a user data access observer and reload posts.
     getLoggedInUser() { () in
-      self.setUpPersonIcon()
       self.loadPosts()
     }
   }
   
   func getLoggedInUser(completion: (() -> Void)!) {
     loadingIndicator.startAnimating()
-    userDataAccess.loggedInUser() { (user: User) in
+    userDataAccess.loggedInUser() { (user: User!) in
       self.loadingIndicator.stopAnimating()
       self.user = user
+      self.setUpPersonIcon()
       if completion { completion() }
     }
   }
@@ -70,7 +70,10 @@ class ArticlesViewController: UITableViewController, ArticleTableViewCellDelegat
       self.posts = posts
       self.loadingIndicator.stopAnimating()
       self.tableView.reloadData()
-      self.refreshControl.endRefreshing()
+      if self.refreshControl.refreshing {
+        SimpleAudioPlayer.playFile("magic-refresh.aif")
+        self.refreshControl.endRefreshing()
+      }
     }
   }
   
@@ -138,6 +141,7 @@ class ArticlesViewController: UITableViewController, ArticleTableViewCellDelegat
     if let post = selectedPost {
       // TODO: Ask an upvoter if the user has not upvoted this post yet.
       if user && post.upvoteURLAddition {
+        SimpleAudioPlayer.playFile("bubble-pop-upvote.mp3")
         cell.pulseUpvoteButton()
         cell.isUpvoted = true
         // TODO: Update the post outside of this view controller.

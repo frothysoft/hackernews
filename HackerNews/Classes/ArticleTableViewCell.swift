@@ -15,19 +15,39 @@ import UIKit
   
 }
 
-class ArticleTableViewCell: UITableViewCell {
+class ArticleTableViewCell: UITableViewCell, UITextViewDelegate {
   
   @IBOutlet var typeImageView : UIImageView
   @IBOutlet var headlineLabel : UILabel
   @IBOutlet var usernameLabel : UILabel
   @IBOutlet var pointsLabel : UILabel
   @IBOutlet var commentsLabel : UILabel
-  @IBOutlet var descriptionLabel : UILabel
+  @IBOutlet var descriptionLabel : UITextView
   @IBOutlet var upvoteImageView: UIImageView
   var delegate: ArticleTableViewCellDelegate?
   
   var isUpvoted: Bool = false {
   didSet { updateUpvoteButton() }
+  }
+  
+  override func willMoveToSuperview(newSuperview: UIView!) {
+    super.willMoveToSuperview(newSuperview)
+  }
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // TODO: Link detection is crashing due to some cell reuse issues.
+    // TODO: This doesn't seem to be insetting the text all the way to the edge.
+    if descriptionLabel { descriptionLabel.textContainerInset = UIEdgeInsetsZero }
+  }
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    // TODO: The headline label height isn't sizing properly until you scroll up and down.
+    if headlineLabel { headlineLabel.preferredMaxLayoutWidth = headlineLabel.frame.size.width }
+    self.updateConstraintsIfNeeded()
+    self.layoutIfNeeded()
+    super.layoutSubviews()
   }
   
   func displayPost(post: Post) {

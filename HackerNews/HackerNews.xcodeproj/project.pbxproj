@@ -19,6 +19,8 @@
 		AE105FCC196DCFCF00E8C6A9 /* AccountCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */; };
 		AE1105EE19761C6C0096326C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1105ED19761C6C0096326C /* Colors.swift */; };
 		AE538F8D196DDD3D00752B59 /* HackerNews.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */; };
+		AE5AA3FE1977A5AE00AC3E33 /* magic-refresh.aif in Resources */ = {isa = PBXBuildFile; fileRef = AE5AA3FC1977A5AE00AC3E33 /* magic-refresh.aif */; };
+		AE5AA4011977A6D100AC3E33 /* bubble-pop-upvote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE5AA4001977A6D100AC3E33 /* bubble-pop-upvote.mp3 */; };
 		AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */; };
 		AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77119651D5600916826 /* ArticleTableViewCell.swift */; };
 		AE67F77419651DFE00916826 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67F77319651DFE00916826 /* DialogView.swift */; };
@@ -32,6 +34,7 @@
 		AE9CFBFD1974BB3F002B75BE /* LibHNCommentToComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */; };
 		AE9CFC011974E75C002B75BE /* PostTypeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFC001974E75C002B75BE /* PostTypeImages.swift */; };
 		AE9CFC051975EE5F002B75BE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CFC041975EE5F002B75BE /* WebViewController.swift */; };
+		AEA0B2341977966F009EE772 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0B2331977966F009EE772 /* CommentViewController.swift */; };
 		AEBC8CDD1965DE6C001F8846 /* ObjectsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */; };
 		AEBC8CDF1965E008001F8846 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC8CDE1965E008001F8846 /* Post.swift */; };
 		E0001531837E4BB68C7BFD33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0780E026FA4885ADD6C934 /* libPods.a */; };
@@ -74,6 +77,8 @@
 		AE105FCB196DCFCF00E8C6A9 /* AccountCredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCredentialStore.swift; sourceTree = "<group>"; };
 		AE1105ED19761C6C0096326C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HackerNews.entitlements; sourceTree = "<group>"; };
+		AE5AA3FC1977A5AE00AC3E33 /* magic-refresh.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "magic-refresh.aif"; sourceTree = "<group>"; };
+		AE5AA4001977A6D100AC3E33 /* bubble-pop-upvote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bubble-pop-upvote.mp3"; sourceTree = "<group>"; };
 		AE629618196B0D900015DA80 /* BlurBackgroundSegueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurBackgroundSegueExtension.swift; sourceTree = "<group>"; };
 		AE67F77119651D5600916826 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		AE67F77319651DFE00916826 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		AE9CFBFC1974BB3F002B75BE /* LibHNCommentToComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibHNCommentToComment.swift; sourceTree = "<group>"; };
 		AE9CFC001974E75C002B75BE /* PostTypeImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTypeImages.swift; sourceTree = "<group>"; };
 		AE9CFC041975EE5F002B75BE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AEA0B2331977966F009EE772 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		AEBC8CDC1965DE6C001F8846 /* ObjectsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsFactory.swift; sourceTree = "<group>"; };
 		AEBC8CDE1965E008001F8846 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +158,7 @@
 				AE67F77119651D5600916826 /* ArticleTableViewCell.swift */,
 				AE0AD407196497230062524F /* ArticleViewController.swift */,
 				AE9CFC041975EE5F002B75BE /* WebViewController.swift */,
+				AEA0B2331977966F009EE772 /* CommentViewController.swift */,
 				AE1105ED19761C6C0096326C /* Colors.swift */,
 				AE0E03831964BC6100B0239E /* HackerNews-Bridging-Header.h */,
 			);
@@ -165,6 +172,7 @@
 				AE0AD40B196497230062524F /* Images.xcassets */,
 				AE0AD40C196497230062524F /* Info.plist */,
 				AE538F8C196DDD3D00752B59 /* HackerNews.entitlements */,
+				AE5AA3FB1977A5AE00AC3E33 /* Sounds */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,6 +184,15 @@
 				AE0AD4191964977C0062524F /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		AE5AA3FB1977A5AE00AC3E33 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AE5AA4001977A6D100AC3E33 /* bubble-pop-upvote.mp3 */,
+				AE5AA3FC1977A5AE00AC3E33 /* magic-refresh.aif */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		AE9CFBF11974BB2F002B75BE /* LibHN */ = {
@@ -287,9 +304,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5AA3FE1977A5AE00AC3E33 /* magic-refresh.aif in Resources */,
 				AE0AD411196497230062524F /* Main.storyboard in Resources */,
 				AE0AD413196497230062524F /* Images.xcassets in Resources */,
 				AE538F8D196DDD3D00752B59 /* HackerNews.entitlements in Resources */,
+				AE5AA4011977A6D100AC3E33 /* bubble-pop-upvote.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +367,7 @@
 				AE721E171965D9B1008C9338 /* HackerNewsAPI.swift in Sources */,
 				AEBC8CDF1965E008001F8846 /* Post.swift in Sources */,
 				AE9CFBFA1974BB2F002B75BE /* LibHNUserStore.swift in Sources */,
+				AEA0B2341977966F009EE772 /* CommentViewController.swift in Sources */,
 				AE0CC54B196C9175000E03E3 /* UserDataAccess.swift in Sources */,
 				AE629619196B0D900015DA80 /* BlurBackgroundSegueExtension.swift in Sources */,
 				AE67F77219651D5600916826 /* ArticleTableViewCell.swift in Sources */,

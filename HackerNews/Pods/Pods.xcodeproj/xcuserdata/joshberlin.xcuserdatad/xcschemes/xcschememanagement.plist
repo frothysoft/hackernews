@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SimpleAudioPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TPKeyboardAvoiding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>031290A0CDEC48F28CA3B59F</key>
+		<key>069F80A1A6BF478AB17E98A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2664A7FC95E45418FAD97CD</key>
+		<key>8126BED9FF6D4E8EB7BC7DEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5BA88C10B934FE6AFBDCF70</key>
+		<key>8A8658EE9242414CBA7361F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDDA662EE14A4DA5B675DC07</key>
+		<key>8B5465EAA4634C018F6BE231</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDF494AEEB8C4ED5A060AD7E</key>
+		<key>A4BCB774B3F14240B1A6B1B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1BBD4370EA7444896985C65</key>
 		<dict>
 			<key>primary</key>
 			<true/>

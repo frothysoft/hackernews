@@ -73,6 +73,7 @@ class ArticleViewController: UITableViewController {
   override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
     if indexPath.row == 0 {
+      // TODO: Navigate back if the web view is already on the stack.
       if let p = post { performSegueWithIdentifier("articleToWebView", sender: self) }
     }
   }

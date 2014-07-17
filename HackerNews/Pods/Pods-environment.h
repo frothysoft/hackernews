@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_Canvas 1
 #define COCOAPODS_VERSION_PATCH_Canvas 1
 
+// SimpleAudioPlayer
+#define COCOAPODS_POD_AVAILABLE_SimpleAudioPlayer
+#define COCOAPODS_VERSION_MAJOR_SimpleAudioPlayer 0
+#define COCOAPODS_VERSION_MINOR_SimpleAudioPlayer 1
+#define COCOAPODS_VERSION_PATCH_SimpleAudioPlayer 2
+
 // TPKeyboardAvoiding
 #define COCOAPODS_POD_AVAILABLE_TPKeyboardAvoiding
 #define COCOAPODS_VERSION_MAJOR_TPKeyboardAvoiding 1
