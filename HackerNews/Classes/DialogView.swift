@@ -92,7 +92,7 @@ class DialogView: CSAnimationView, UITextFieldDelegate {
   
   func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
     if textField == emailTextField {
-      if textField.text.utf16count > 20 {
+      if textField.text.utf16Count > 20 {
         self.emailImageView.hidden = true
       } else {
         self.emailImageView.hidden = false

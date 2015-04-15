@@ -2,6 +2,7 @@ PODS:
   - ACSimpleKeychain (0.0.1)
   - Canvas (0.1.1)
   - libHN (2.0.0)
+  - Mixpanel (2.4.1)
   - SimpleAudioPlayer (0.1.2)
   - TPKeyboardAvoiding (1.2.3)
 
@@ -9,6 +10,7 @@ DEPENDENCIES:
   - ACSimpleKeychain (~> 0.0.1)
   - Canvas (~> 0.1.1)
   - libHN (~> 2.0.0)
+  - Mixpanel (~> 2.4.1)
   - SimpleAudioPlayer (~> 0.1.2)
   - TPKeyboardAvoiding (~> 1.2.3)
 
@@ -16,6 +18,7 @@ SPEC CHECKSUMS:
   ACSimpleKeychain: 5a471ccf5c85d23dcb603e9690b448832b892433
   Canvas: 45356a2e61087a776bfde5090676d290cf67f7f2
   libHN: ef836ef635e35a17936ed7d638b5bda007a2d2b6
+  Mixpanel: a29ff32db93936dea24162f0dc4fecc4a8f17071
   SimpleAudioPlayer: d73a7be79c4f96a06b2f0be9d073284fb270dd9d
   TPKeyboardAvoiding: ca26afa683d829cb96fe69b887fc8be4178f0b9a
 

@@ -10,9 +10,9 @@ import UIKit
 
 class CommentViewController: UIViewController, UITextViewDelegate {
 
-  @IBOutlet var commentBarButton: UIBarButtonItem
-  @IBOutlet var commentTextView: UITextView
-  @IBOutlet var loadingView: UIView
+  @IBOutlet var commentBarButton: UIBarButtonItem!
+  @IBOutlet var commentTextView: UITextView!
+  @IBOutlet var loadingView: UIView!
   var hackerNewsAPI: HackerNewsAPI
   var post: Post?
   // TODO: Support commenting on comments

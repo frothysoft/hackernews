@@ -14,8 +14,8 @@ struct Comment {
   let username: String
   let text: String
   let timeCreatedString: String
-  let replyURLString: String
+  let replyURLString: String?
   let level: Int
-  let upvoteURLAddition: String
+  let upvoteURLAddition: String?
   
 }

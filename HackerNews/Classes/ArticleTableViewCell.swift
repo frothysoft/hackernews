@@ -17,21 +17,17 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell, UITextViewDelegate {
   
-  @IBOutlet var typeImageView : UIImageView
-  @IBOutlet var headlineLabel : UILabel
-  @IBOutlet var usernameLabel : UILabel
-  @IBOutlet var pointsLabel : UILabel
-  @IBOutlet var commentsLabel : UILabel
-  @IBOutlet var descriptionLabel : UITextView
-  @IBOutlet var upvoteImageView: UIImageView
+  @IBOutlet var typeImageView : UIImageView!
+  @IBOutlet var headlineLabel : UILabel!
+  @IBOutlet var usernameLabel : UILabel!
+  @IBOutlet var pointsLabel : UILabel!
+  @IBOutlet var commentsLabel : UILabel!
+  @IBOutlet var descriptionLabel : UITextView!
+  @IBOutlet var upvoteImageView: UIImageView!
   var delegate: ArticleTableViewCellDelegate?
   
   var isUpvoted: Bool = false {
   didSet { updateUpvoteButton() }
-  }
-  
-  override func willMoveToSuperview(newSuperview: UIView!) {
-    super.willMoveToSuperview(newSuperview)
   }
   
   override func awakeFromNib() {

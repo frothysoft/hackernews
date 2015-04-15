@@ -12,7 +12,7 @@ class ArticlesViewController: UITableViewController, ArticleTableViewCellDelegat
   
   var posts: [Post] = []
   var selectedPost: Post? = nil
-  @IBOutlet var loadingIndicator : UIActivityIndicatorView
+  @IBOutlet var loadingIndicator : UIActivityIndicatorView!
   let hackerNewsAPI: HackerNewsAPI
   let userDataAccess: UserDataAccess
   var user: User?
@@ -29,6 +29,7 @@ class ArticlesViewController: UITableViewController, ArticleTableViewCellDelegat
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    // TODO: Add a Top/Recent switch.
     setUpTableView()
     setUpPullToRefresh()
     // TODO: Monitor user updates using a user data access observer and reload posts.

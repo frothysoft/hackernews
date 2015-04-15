@@ -6,3 +6,4 @@
 #import <libHN/libHN.h>
 #import <ACSimpleKeychain/ACSimpleKeychain.h>
 #import <SimpleAudioPlayer/SimpleAudioPlayer.h>
+#import <Mixpanel/Mixpanel.h>

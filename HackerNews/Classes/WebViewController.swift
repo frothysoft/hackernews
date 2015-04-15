@@ -10,8 +10,9 @@ import UIKit
 
 class WebViewController: UIViewController {
 
-  @IBOutlet var webView: UIWebView
-  @IBOutlet var commentsButton: UIButton
+  // TODO: Use WKWebView.
+  @IBOutlet var webView: UIWebView!
+  @IBOutlet var commentsButton: UIButton!
   var URL: NSURL?
   var post: Post?
   

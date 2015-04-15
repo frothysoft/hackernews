@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_Canvas 1
 #define COCOAPODS_VERSION_PATCH_Canvas 1
 
+// Mixpanel
+#define COCOAPODS_POD_AVAILABLE_Mixpanel
+#define COCOAPODS_VERSION_MAJOR_Mixpanel 2
+#define COCOAPODS_VERSION_MINOR_Mixpanel 4
+#define COCOAPODS_VERSION_PATCH_Mixpanel 1
+
 // SimpleAudioPlayer
 #define COCOAPODS_POD_AVAILABLE_SimpleAudioPlayer
 #define COCOAPODS_VERSION_MAJOR_SimpleAudioPlayer 0

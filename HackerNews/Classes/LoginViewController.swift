@@ -50,6 +50,8 @@ class LoginViewController: UIViewController, LoginInteractionHandler {
       if !user {
         self.userInterface.showErrorMessage()
       } else {
+        // TODO: We might also need to set some info with the people.set method.
+        Mixpanel.sharedInstance().identify(user.username)
         self.userDataAccess.storeUser(user, password: password)
         self.dismissViewControllerAnimated(true, completion: nil)
       }

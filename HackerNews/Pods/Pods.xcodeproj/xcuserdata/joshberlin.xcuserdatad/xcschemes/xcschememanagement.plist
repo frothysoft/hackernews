@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Mixpanel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SimpleAudioPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>069F80A1A6BF478AB17E98A2</key>
+		<key>0A9F9AE188E347CAA7370D87</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8126BED9FF6D4E8EB7BC7DEB</key>
+		<key>76857D9B4CF741AAB5E9ED37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A8658EE9242414CBA7361F8</key>
+		<key>8B1680C813BA4D00B9D5AFD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B5465EAA4634C018F6BE231</key>
+		<key>8D4CED77CDD848038CB395ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4BCB774B3F14240B1A6B1B7</key>
+		<key>90B073F3B30244788078B8BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1BBD4370EA7444896985C65</key>
+		<key>EE4681368458427A9B011B8D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFB5A6A1210A412EB43E2F1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
