@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>985FE9AC-B666-44AE-AEF4-6940FDA58560</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HackerNews</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E61DE0AD59EBD9776667FBC85022961E931757DC</key>
+		<string>https://github.com/frothysoft/hackernews.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HackerNews/HackerNews.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E61DE0AD59EBD9776667FBC85022961E931757DC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/frothysoft/hackernews.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E61DE0AD59EBD9776667FBC85022961E931757DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E61DE0AD59EBD9776667FBC85022961E931757DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hackernews</string>
+		</dict>
+	</array>
+</dict>
+</plist>
